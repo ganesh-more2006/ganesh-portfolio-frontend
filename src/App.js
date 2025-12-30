@@ -10,6 +10,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    
     const fetchProjects = async () => {
       try {
         console.log("System: Starting data fetch from MongoDB...");
