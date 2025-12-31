@@ -14,7 +14,7 @@ function App() {
     const fetchProjects = async () => {
       try {
         console.log("System: Starting data fetch from MongoDB...");
-        const response = await axios.get('ganesh-more-portfolio-production.up.railway.app');
+        const response = await axios.get('ganesh-portfolio-backend-production.up.railway.app');
         setProjects(response.data);
         setLoading(false);
         console.log("System: Successfully retrieved projects:", response.data.length);
